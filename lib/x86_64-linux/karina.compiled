@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="/usr/bin/fpc" Date="1506933533"/>
-  <Params Value=" -MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhibq -Fi/home/andreas/private/github/karina/lib/x86_64-linux -Fu/home/andreas/private/Lazarus/packages/lclpatch/lib/x86_64-linux -Fu/home/andreas/private/Lazarus/packages/streams/lib/x86_64-linux -Fu/usr/lib64/lazarus/lcl/units/x86_64-linux/gtk2 -Fu/usr/lib64/lazarus/lcl/units/x86_64-linux -Fu/usr/lib64/lazarus/components/lazutils/lib/x86_64-linux -Fu/usr/lib64/lazarus/packager/units/x86_64-linux -Fu/home/andreas/private/github/karina/ -FU/home/andreas/private/github/karina/lib/x86_64-linux/ -FE/home/andreas/private/github/karina/lib/x86_64-linux/ -dLCL -dLCLgtk2 karina.lpr"/>
-</CONFIG>
