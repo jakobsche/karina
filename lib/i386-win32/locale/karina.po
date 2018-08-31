@@ -1,0 +1,138 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: taboutbox.caption
+msgid "Über Karina"
+msgstr ""
+
+#: taboutbox.label1.caption
+msgid ""
+"Anwendung \"Karina\" zum Bearbeiten einfacher Textdateien\n"
+"\n"
+"Version 2.0\n"
+"\n"
+"Karina Winn gewidmet\n"
+"\n"
+"Zur Demonstration einer plattfurmunabhängigen GUI-App-Entwicklung mit \"Lazarzus\"-IDE\n"
+"von Andreas Jakobsche (messages@jakobsche.de, andis63.blogspot.de, www.jakobsche.de), Schopenhauerstraße 35C, 70565 Stuttgart programmiert und als Open Source-Projekt zur Verfügung gestellt.\n"
+"\n"
+"Das Quellprojekt kann unverändert unter \n"
+"Windows SE mit Intel-CPU oder\n"
+"Linux mit ARM- sowie Intel-CPU\n"
+"kompiliert werden. Dazu sind die Packages LCLPatch und streams von demselben Autor erforderlich.\n"
+"\n"
+"Teste weitere Plattformen!\n"
+msgstr ""
+
+#: tform1.caption
+msgid "Karina"
+msgstr ""
+
+#: tform1.langmenu.caption
+msgid "&Sprache"
+msgstr ""
+
+#: tform1.menuitem1.caption
+msgid "Datei"
+msgstr ""
+
+#: tform1.menuitem10.caption
+msgid "Beenden"
+msgstr ""
+
+#: tform1.menuitem11.caption
+msgid "Wiederholen"
+msgstr ""
+
+#: tform1.menuitem13.caption
+msgid "Ausschneiden"
+msgstr ""
+
+#: tform1.menuitem14.caption
+msgid "Kopieren"
+msgstr ""
+
+#: tform1.menuitem15.caption
+msgid "Einfügen"
+msgstr ""
+
+#: tform1.menuitem17.caption
+msgid "Suchen"
+msgstr ""
+
+#: tform1.menuitem18.caption
+msgid "Nächsten suchen"
+msgstr ""
+
+#: tform1.menuitem19.caption
+msgid "Hilfe"
+msgstr ""
+
+#: tform1.menuitem2.caption
+msgid "Neu"
+msgstr ""
+
+#: tform1.menuitem20.caption
+msgid "Inhalte"
+msgstr ""
+
+#: tform1.menuitem21.caption
+msgid "Einführung"
+msgstr ""
+
+#: tform1.menuitem23.caption
+msgid "Über"
+msgstr ""
+
+#: tform1.menuitem24.caption
+msgid "&Ansicht"
+msgstr ""
+
+#: tform1.menuitem25.caption
+msgid "&Schrift ..."
+msgstr ""
+
+#: tform1.menuitem27.caption
+msgid "&Deutsch"
+msgstr ""
+
+#: tform1.menuitem28.caption
+msgid "&English"
+msgstr ""
+
+#: tform1.menuitem29.caption
+msgid "&Konfigurationsdatei"
+msgstr ""
+
+#: tform1.menuitem4.caption
+msgid "Öffnen"
+msgstr ""
+
+#: tform1.menuitem5.caption
+msgid "Wieder öffnen"
+msgstr ""
+
+#: tform1.menuitem6.caption
+msgid "Bearbeiten"
+msgstr ""
+
+#: tform1.menuitem7.caption
+msgid "Zurücknehmen"
+msgstr ""
+
+#: tform1.menuitem8.caption
+msgid "S&chließen"
+msgstr ""
+
+#: tform1.menuitemsave.caption
+msgid "Speichern ..."
+msgstr ""
+
+#: tform1.menuitemsaveas.caption
+msgid "Speichern unter ..."
+msgstr ""
+
+#: tform1.wordwrapitem.caption
+msgid "&Zeilenumbruch"
+msgstr ""
+
