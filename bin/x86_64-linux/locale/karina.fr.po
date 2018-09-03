@@ -14,7 +14,7 @@ msgstr ""
 
 #: taboutbox.caption
 msgid "Über Karina"
-msgstr "A propos Karina"
+msgstr "A propos de Karina"
 
 #: taboutbox.label1.caption
 msgid ""
