@@ -225,6 +225,11 @@ begin
     end
   end;
   WordWrapItem.Checked := Memo.WordWrap;
+  with KarinaConfig do begin
+    if (Language = '') or (Language = 'de') then LangMenu.ImageIndex:=0
+    else if Language = 'en' then LangMenu.ImageIndex := 1
+    else if Language = 'fr' then LangMenu.ImageIndex := 2
+  end;
 { Nicht verwendete Menübefehle deaktivieren }
   with MainMenu.Items do
     for i := 0 to Count - 1 do
@@ -269,7 +274,7 @@ end;
 
 procedure TForm1.MenuItem28Click(Sender: TObject);
 begin
-  Translate('en', Sender as TMenuItem)
+  Translate('en', Sender as TMenuItem);
 end;
 
 procedure TForm1.MenuItem29Click(Sender: TObject);
@@ -289,7 +294,7 @@ end;
 
 procedure TForm1.MenuItem30Click(Sender: TObject);
 begin
-  Translate('fr', Sender as TMenuItem)
+  Translate('fr', Sender as TMenuItem);
 end;
 
 procedure TForm1.WordWrapItemClick(Sender: TObject);
