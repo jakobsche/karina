@@ -21,7 +21,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, Menus,
-  ComCtrls, StdCtrls{, PathView};
+  ComCtrls, StdCtrls, PathView;
 
 type
 

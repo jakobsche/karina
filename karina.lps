@@ -22,8 +22,8 @@
         <UnitName Value="Unit1"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="8"/>
-        <CursorPos X="22" Y="24"/>
+        <TopLine Value="265"/>
+        <CursorPos X="3" Y="267"/>
         <UsageCount Value="56"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -149,9 +149,10 @@
       <Unit18>
         <Filename Value="../packages/computer/chiptemp.pas"/>
         <UnitName Value="ChipTemp"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos Y="16"/>
+        <EditorIndex Value="6"/>
+        <CursorPos X="9" Y="5"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit18>
       <Unit19>
         <Filename Value="/usr/lib64/lazarus/lcl/lcltranslator.pas"/>
@@ -165,9 +166,10 @@
       <Unit20>
         <Filename Value="../packages/lclpatch/langmenu.pas"/>
         <UnitName Value="LangMenu"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="5"/>
         <CursorPos X="60" Y="22"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit20>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">

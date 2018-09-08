@@ -1,0 +1,8 @@
+.svn
+.directory
+*.bak
+backup
+commit
+commit.bat
+deploy
+lib
