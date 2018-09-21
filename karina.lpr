@@ -33,6 +33,7 @@ begin
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TAboutBox, AboutBox);
+  {Form1.LoadFile;}
   Application.Run;
 end.
 

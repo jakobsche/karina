@@ -99,6 +99,7 @@ type
     Start: Integer;
     FileName: string;
     HasChanged: Boolean;
+    procedure LoadFile;
   end;
 
 var
@@ -206,24 +207,7 @@ var
   i, j: Integer;
 begin
   FormAdjust(Self);
-  if Application.ParamCount > 0 then begin
-    i := 1;
-    with Application do
-      while (i <= ParamCount) do begin
-      { Optionen mit je 1 Parameter überspringen }
-        if (Params[i] = '-l') or (Params[i] = '--lang') then begin
-          Inc(i, 2) {wird von Unit LCLTranslator ausgewertet}
-        end
-      { Optionen ohne Parameter überspringen }
-        else if Params[i][1] = '-' then Inc(i)
-        else Break {Dateiname als Parameter an Position i vermutet}
-      end;
-    if Application.Params[i] <> '' then begin
-      Memo.Lines.LoadFromFile(Application.Params[i]);
-      Caption := Format('%s - Karina', [Application.Params[i]]);
-      FileName := Application.Params[i]
-    end
-  end;
+  LoadFile;
   WordWrapItem.Checked := Memo.WordWrap;
   with KarinaConfig do begin
     if (Language = '') or (Language = 'de') then LangMenu.ImageIndex:=0
@@ -326,6 +310,30 @@ procedure TForm1.Translate(Language: string; MenuItem: TMenuItem);
 begin
   KarinaConfig.Language := Language;
   LangMenu.ImageIndex := MenuItem.ImageIndex
+end;
+
+procedure TForm1.LoadFile;
+var
+  i: Integer;
+begin
+  if Application.ParamCount > 0 then begin
+    i := 1;
+    with Application do
+      while (i <= ParamCount) do begin
+      { Optionen mit je 1 Parameter überspringen }
+        if (Params[i] = '-l') or (Params[i] = '--lang') then begin
+          Inc(i, 2) {wird von Unit LCLTranslator ausgewertet}
+        end
+      { Optionen ohne Parameter überspringen }
+        else if Params[i][1] = '-' then Inc(i)
+        else Break {Dateiname als Parameter an Position i vermutet}
+      end;
+    if Application.Params[i] <> '' then begin
+      Memo.Lines.LoadFromFile(Application.Params[i]);
+      Caption := Format('%s - Karina', [Application.Params[i]]);
+      FileName := Application.Params[i]
+    end
+  end;
 end;
 
 end.
