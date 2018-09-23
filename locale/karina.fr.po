@@ -37,7 +37,7 @@ msgid ""
 "Autor erforderlich.\n"
 "\n"
 "Teste weitere Plattformen!\n"
-msgstr ""
+msgstr "falsche Übersetzung\n"
 
 #: tform1.caption
 msgid "Karina"

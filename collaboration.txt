@@ -1,0 +1,24 @@
+Collaboration at a github project
+
+- Create a personal account
+- verify your email address
+- Go to https://github.com/jakobsche/karina
+- click "Fork" near the right top corner of the page. This copies the project to your account
+- git clone https://github.com/nancyperlt/karina.git
+- edit the project in the new local folder karina
+- execute "git status"
+- changed files are listed in red
+- add the changes to your local repository with "git add ..." (The following parameters are the names of the changed files)
+- git config --global user.email "nancyperlt3@gmail.com"
+- git config --global user.name "Nancy Perlt"
+- git commit -m "French translation updated"
+- git status
+Auf Branch master
+Ihr Branch ist auf dem selben Stand wie 'origin/master'.
+nichts zu committen, Arbeitsverzeichnis unverändert
+
+- go to your fork on github https://github.com/nancyperlt/karina
+- click the button "New pull request"
+- get a view of your changes
+- click "Create pull request"
+- The pull request is sent to the original repository maintainer
