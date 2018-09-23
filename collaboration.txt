@@ -16,3 +16,9 @@ Collaboration at a github project
 Auf Branch master
 Ihr Branch ist auf dem selben Stand wie 'origin/master'.
 nichts zu committen, Arbeitsverzeichnis unverändert
+
+- go to your fork on github https://github.com/nancyperlt/karina
+- click the button "New pull request"
+- get a view of your changes
+- click "Create pull request"
+- The pull request is sent to the original repository maintainer
