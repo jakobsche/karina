@@ -14,7 +14,7 @@ msgstr ""
 
 #: taboutbox.caption
 msgid "Über Karina"
-msgstr ""
+msgstr "A propos de Karina"
 
 #: taboutbox.label1.caption
 msgid ""
@@ -37,7 +37,7 @@ msgid ""
 "Autor erforderlich.\n"
 "\n"
 "Teste weitere Plattformen!\n"
-msgstr ""
+msgstr "falsche Übersetzung\n"
 
 #: tform1.caption
 msgid "Karina"
