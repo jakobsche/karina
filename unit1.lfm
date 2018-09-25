@@ -5,24 +5,24 @@ object Form1: TForm1
   Width = 491
   ActiveControl = Memo
   Caption = 'Karina'
-  ClientHeight = 344
+  ClientHeight = 351
   ClientWidth = 491
   Menu = MainMenu
   OnActivate = FormActivate
   OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
   Position = poDefault
-  LCLVersion = '1.8.2.0'
+  LCLVersion = '1.4.4.0'
   object StatusBar1: TStatusBar
     Left = 0
     Height = 20
-    Top = 324
+    Top = 331
     Width = 491
     Panels = <>
   end
   object Memo: TMemo
     Left = 0
-    Height = 324
+    Height = 331
     Top = 0
     Width = 491
     Align = alClient
