@@ -11,3 +11,7 @@ You can open a file on the command line. In that case it is always necessary to 
 karina -l en .gitignore
 
 if you want to open the file .gitignore that is in the current directory.
+
+To discuss this and other of my projects, join my
+
+WhatsApp group via https://chat.whatsapp.com/7ZgTpRUZldi58IbYA7ShHM
