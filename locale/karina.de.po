@@ -133,6 +133,10 @@ msgstr "&Konfigurationsdatei"
 msgid "&Französisch"
 msgstr ""
 
+#: tform1.menuitem31.caption
+msgid "&Spanisch"
+msgstr ""
+
 #: tform1.menuitem4.caption
 msgid "Öffnen"
 msgstr "Öffnen"

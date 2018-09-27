@@ -24,20 +24,16 @@ msgid ""
 "\n"
 "Karina Winn gewidmet\n"
 "\n"
-"Zur Demonstration einer plattfurmunabhängigen GUI-App-Entwicklung mit "
-"\"Lazarzus\"-IDE\n"
-"von Andreas Jakobsche (messages@jakobsche.de, andis63.blogspot.de, www."
-"jakobsche.de), Schopenhauerstraße 35C, 70565 Stuttgart programmiert und als "
-"Open Source-Projekt zur Verfügung gestellt.\n"
+"Zur Demonstration einer plattfurmunabhängigen GUI-App-Entwicklung mit \"Lazarzus\"-IDE\n"
+"von Andreas Jakobsche (messages@jakobsche.de, andis63.blogspot.de, www.jakobsche.de), Schopenhauerstraße 35C, 70565 Stuttgart programmiert und als Open Source-Projekt zur Verfügung gestellt.\n"
 "\n"
 "Das Quellprojekt kann unverändert unter \n"
 "Windows SE mit Intel-CPU oder\n"
 "Linux mit ARM- sowie Intel-CPU\n"
-"kompiliert werden. Dazu sind die Packages LCLPatch und streams von demselben "
-"Autor erforderlich.\n"
+"kompiliert werden. Dazu sind die Packages LCLPatch und streams von demselben Autor erforderlich.\n"
 "\n"
 "Teste weitere Plattformen!\n"
-msgstr "falsche Übersetzung\n"
+msgstr "falsche Übersetzung"
 
 #: tform1.caption
 msgid "Karina"
@@ -123,6 +119,10 @@ msgstr ""
 msgid "&Französisch"
 msgstr ""
 
+#: tform1.menuitem31.caption
+msgid "&Spanisch"
+msgstr ""
+
 #: tform1.menuitem4.caption
 msgid "Öffnen"
 msgstr ""
@@ -154,3 +154,4 @@ msgstr ""
 #: tform1.wordwrapitem.caption
 msgid "&Zeilenumbruch"
 msgstr ""
+

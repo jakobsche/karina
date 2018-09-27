@@ -57,6 +57,7 @@ type
     MenuItem28: TMenuItem;
     MenuItem29: TMenuItem;
     MenuItem30: TMenuItem;
+    MenuItem31: TMenuItem;
     WordWrapItem: TMenuItem;
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
@@ -85,6 +86,7 @@ type
     procedure MenuItem28Click(Sender: TObject);
     procedure MenuItem29Click(Sender: TObject);
     procedure MenuItem30Click(Sender: TObject);
+    procedure MenuItem31Click(Sender: TObject);
     procedure WordWrapItemClick(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
@@ -213,6 +215,7 @@ begin
     if (Language = '') or (Language = 'de') then LangMenu.ImageIndex:=0
     else if Language = 'en' then LangMenu.ImageIndex := 1
     else if Language = 'fr' then LangMenu.ImageIndex := 2
+    else if Language = 'es' then LangMenu.ImageIndex := 3;
   end;
 { Nicht verwendete Menübefehle deaktivieren }
   with MainMenu.Items do
@@ -279,6 +282,11 @@ end;
 procedure TForm1.MenuItem30Click(Sender: TObject);
 begin
   Translate('fr', Sender as TMenuItem);
+end;
+
+procedure TForm1.MenuItem31Click(Sender: TObject);
+begin
+  Translate('es', Sender as TMenuItem);
 end;
 
 procedure TForm1.WordWrapItemClick(Sender: TObject);
