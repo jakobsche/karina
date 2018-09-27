@@ -55,11 +55,6 @@ msgstr ""
 msgid "Wiederholen"
 msgstr ""
 
-#: tform1.menuitem12.caption
-msgctxt "tform1.menuitem12.caption"
-msgid "-"
-msgstr ""
-
 #: tform1.menuitem13.caption
 msgid "Ausschneiden"
 msgstr ""
@@ -70,11 +65,6 @@ msgstr ""
 
 #: tform1.menuitem15.caption
 msgid "Einfügen"
-msgstr ""
-
-#: tform1.menuitem16.caption
-msgctxt "tform1.menuitem16.caption"
-msgid "-"
 msgstr ""
 
 #: tform1.menuitem17.caption
@@ -101,11 +91,6 @@ msgstr ""
 msgid "Einführung"
 msgstr ""
 
-#: tform1.menuitem22.caption
-msgctxt "tform1.menuitem22.caption"
-msgid "-"
-msgstr ""
-
 #: tform1.menuitem23.caption
 msgid "Über"
 msgstr ""
@@ -118,11 +103,6 @@ msgstr ""
 msgid "&Schrift ..."
 msgstr ""
 
-#: tform1.menuitem26.caption
-msgctxt "tform1.menuitem26.caption"
-msgid "-"
-msgstr ""
-
 #: tform1.menuitem27.caption
 msgid "&Deutsch"
 msgstr ""
@@ -133,11 +113,6 @@ msgstr ""
 
 #: tform1.menuitem29.caption
 msgid "&Konfigurationsdatei"
-msgstr ""
-
-#: tform1.menuitem3.caption
-msgctxt "tform1.menuitem3.caption"
-msgid "-"
 msgstr ""
 
 #: tform1.menuitem30.caption
@@ -162,11 +137,6 @@ msgstr ""
 
 #: tform1.menuitem8.caption
 msgid "S&chließen"
-msgstr ""
-
-#: tform1.menuitem9.caption
-msgctxt "tform1.menuitem9.caption"
-msgid "-"
 msgstr ""
 
 #: tform1.menuitemsave.caption
