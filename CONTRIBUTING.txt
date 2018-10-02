@@ -1,0 +1,7 @@
+How to contribute to the project karina
+
+1 If you have no GitHub account, create one!
+2 Fork this repository to your account!
+3 Make your suggestions by editing your fork!
+4 Send a pull request to get checked and merged your fork to the master branch!
+
