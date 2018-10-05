@@ -1,3 +1,4 @@
 This is a list of proposals, what can be done to improve this project.
 
 - Add individual program icons
+- Translate the GUI to French language
