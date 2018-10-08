@@ -5,3 +5,4 @@ How to contribute to the project karina
 3 Make your suggestions by editing your fork!
 4 Send a pull request to get checked and merged your fork to the master branch!
 
+See the file TODO.txt to find out, what you can contribute!
