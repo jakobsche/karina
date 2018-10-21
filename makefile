@@ -1,35 +1,63 @@
-BIN:	bin/arm-linux/karina bin/i386-linux/karina bin/i386-win32/karina.exe bin/x86_64-linux/karina bin/i386-linux/locale bin/i386-win32/locale bin/x86_64-linux/locale bin/arm-linux/locale 
+# Derived variables
 
-bin/arm-linux/karina:	lib/arm-linux/karina
-	strip -o bin/arm-linux/karina lib/arm-linux/karina
+Target = $(Target_CPU)-$(Target_OS)
+BinTargetDir = bin/$(Target)/karina
+BinTargetLocaleDir = $(BinTargetDir)/locale
 
-bin/i386-linux/karina: lib/i386-linux/karina
-	strip -o bin/i386-linux/karina lib/i386-linux/karina
 
-bin/i386-win32/karina.exe: lib/i386-win32/karina.exe
-	strip -o bin/i386-win32/karina.exe lib/i386-win32/karina.exe
+# Default (final) targets
 
-bin/x86_64-linux/karina: lib/x86_64-linux/karina
-	strip -o bin/x86_64-linux/karina lib/x86_64-linux/karina
+default: $(BinTargetDir)/karina $(BinTargetDir)/Karina.desktop $(BinTargetDir)/karina.ico defaultlocale
 
-bin/arm-linux/locale: locale
-	cp -uv locale bin/arm-linux/
+defaultwin: $(BinTargetDir)/karina.exe defaultlocale
 
-bin/i386-linux/locale: locale
-	cp -uv locale bin/i386-linux/
 
-bin/i386-win32/locale: locale
-	cp -uv locale bin/i386-win32/
+# Required targets
 
-x86_64-linux/locale: locale
-	cp -uv locale bin/c86_64-linux/
+# all language files
+defaultlocale: $(BinTargetLocaleDir)/karina.po $(BinTargetLocaleDir)/karina.en.po $(BinTargetLocaleDir)/karina.de.po $(BinTargetLocaleDir)/karina.es.po $(BinTargetLocaleDir)/karina.fr.po
 
-locale:
+# executable app file except for Windows
+$(BinTargetDir)/karina: $(BinTargetDir) lib/$(Target)/karina
+	strip -o $(BinTargetDir)/karina lib/$(Target)/karina
 
-lib/x86_64-linux/karina:
+# executable app file for Windows
+$(BinTargetDir)/karina.exe: $(BinTargetDir) lib/$(Target)/karina
+	strip -o $(BinTargetDir)/karina.exe lib/$(Target)/karina.exe
 
-lib/i386-win32/karina.exe:
+# Linux desktop file
+$(BinTargetDir)/Karina.desktop: Karina.desktop
+	cp Karina.desktop $(BinTargetDir)/
 
-lib/i386-linux/karina:
+$(BinTargetDir)/karina.ico: karina.ico
+	cp karina.ico $(BinTargetDir)/
 
-lib/arm-linux/karina:
+# target directory for binaries
+$(BinTargetDir): bin/$(Target) 
+	mkdir $(BinTargetDir)
+	
+bin/$(Target): bin
+	mkdir bin/$(Target)
+	
+# Sprachdateien
+
+$(BinTargetLocaleDir)/karina.po: $(BinTargetLocaleDir) locale/karina.po
+	cp locale/karina.po $(BinTargetLocaleDir)/
+
+$(BinTargetLocaleDir)/karina.de.po: $(BinTargetLocaleDir) locale/karina.de.po
+	cp locale/karina.de.po $(BinTargetLocaleDir)/
+
+$(BinTargetLocaleDir)/karina.es.po: $(BinTargetLocaleDir) locale/karina.es.po
+	cp locale/karina.es.po $(BinTargetLocaleDir)/
+
+$(BinTargetLocaleDir)/karina.en.po: $(BinTargetLocaleDir) locale/karina.en.po	
+	cp locale/karina.en.po $(BinTargetLocaleDir)/
+
+$(BinTargetLocaleDir)/karina.fr.po: $(BinTargetLocaleDir) locale/karina.fr.po	
+	cp locale/karina.fr.po $(BinTargetLocaleDir)/
+
+$(BinTargetLocaleDir): $(BinTargetDir)
+	mkdir $(BinTargetLocaleDir)
+	
+bin:
+	mkdir bin
