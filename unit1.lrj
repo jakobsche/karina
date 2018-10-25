@@ -28,5 +28,6 @@
 {"hash":181189432,"name":"tform1.menuitem27.caption","sourcebytes":[38,68,101,117,116,115,99,104],"value":"&Deutsch"},
 {"hash":206451256,"name":"tform1.menuitem28.caption","sourcebytes":[38,69,110,103,108,105,115,104],"value":"&English"},
 {"hash":67276760,"name":"tform1.menuitem30.caption","sourcebytes":[38,70,114,97,110,122,195,182,115,105,115,99,104],"value":"&Franz\u00F6sisch"},
-{"hash":109388344,"name":"tform1.menuitem31.caption","sourcebytes":[38,83,112,97,110,105,115,99,104],"value":"&Spanisch"}
+{"hash":109388344,"name":"tform1.menuitem31.caption","sourcebytes":[38,83,112,97,110,105,115,99,104],"value":"&Spanisch"},
+{"hash":121629496,"name":"tform1.menuitem32.caption","sourcebytes":[38,208,191,208,190,45,209,128,209,131,209,129,209,129,208,186,208,184],"value":"&\u043F\u043E-\u0440\u0443\u0441\u0441\u043A\u0438"}
 ]}
