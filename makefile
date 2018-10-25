@@ -22,7 +22,7 @@ $(BinTargetDir)/karina: $(BinTargetDir) lib/$(Target)/karina
 	strip -o $(BinTargetDir)/karina lib/$(Target)/karina
 
 # executable app file for Windows
-$(BinTargetDir)/karina.exe: $(BinTargetDir) lib/$(Target)/karina
+$(BinTargetDir)/karina.exe: $(BinTargetDir) lib/$(Target)/karina.exe
 	strip -o $(BinTargetDir)/karina.exe lib/$(Target)/karina.exe
 
 # Linux desktop file
@@ -39,7 +39,8 @@ $(BinTargetDir): bin/$(Target)
 bin/$(Target): bin
 	if !(test -e bin/$(Target)) then mkdir bin/$(Target) ; fi
 	
-# Sprachdateien
+
+# language files
 
 $(BinTargetLocaleDir)/karina.po: $(BinTargetLocaleDir) locale/karina.po
 	cp locale/karina.po $(BinTargetLocaleDir)/
@@ -65,3 +66,5 @@ $(BinTargetLocaleDir): $(BinTargetDir)
 bin:
 	if !(test -e bin) mkdir bin ; fi
 	
+lib/$(Target)/karina lib/$(Target)/karina.exe: karina.lpi
+	lazbuild -r --os=$(Target_OS) --cpu=$(Target_CPU) karina.lpi
