@@ -15,7 +15,7 @@ defaultwin: $(BinTargetDir)/karina.exe defaultlocale
 # Required targets
 
 # all language files
-defaultlocale: $(BinTargetLocaleDir)/karina.po $(BinTargetLocaleDir)/karina.en.po $(BinTargetLocaleDir)/karina.de.po $(BinTargetLocaleDir)/karina.es.po $(BinTargetLocaleDir)/karina.fr.po
+defaultlocale: $(BinTargetLocaleDir)/karina.po $(BinTargetLocaleDir)/karina.en.po $(BinTargetLocaleDir)/karina.de.po $(BinTargetLocaleDir)/karina.es.po $(BinTargetLocaleDir)/karina.fr.po $(BinTargetLocaleDir)/karina.ru.po
 
 # executable app file except for Windows
 $(BinTargetDir)/karina: $(BinTargetDir) lib/$(Target)/karina
@@ -34,10 +34,10 @@ $(BinTargetDir)/karina.ico: karina.ico
 
 # target directory for binaries
 $(BinTargetDir): bin/$(Target) 
-	mkdir $(BinTargetDir)
+	if !(test -e $(BinTargetDir) then mkdir $(BinTargetDir) ; fi
 	
 bin/$(Target): bin
-	mkdir bin/$(Target)
+	if !(test -e bin/$(Target)) then mkdir bin/$(Target) ; fi
 	
 # Sprachdateien
 
@@ -56,8 +56,12 @@ $(BinTargetLocaleDir)/karina.en.po: $(BinTargetLocaleDir) locale/karina.en.po
 $(BinTargetLocaleDir)/karina.fr.po: $(BinTargetLocaleDir) locale/karina.fr.po	
 	cp locale/karina.fr.po $(BinTargetLocaleDir)/
 
+$(BinTargetLocaleDir)/karina.ru.po: $(BinTargetLocaleDir) locale/karina.ru.po
+	cp locale/karina.ru.po $(BinTargetLocaleDir)/
+	
 $(BinTargetLocaleDir): $(BinTargetDir)
-	mkdir $(BinTargetLocaleDir)
+	if !(test -e $(BinTargetLocaleDir)) then mkdir $(BinTargetLocaleDir) ; fi
 	
 bin:
-	mkdir bin
+	if !(test -e bin) mkdir bin ; fi
+	

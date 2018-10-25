@@ -138,6 +138,10 @@ msgstr "&Francés"
 msgid "&Spanisch"
 msgstr "E&spañol"
 
+#: tform1.menuitem32.caption
+msgid "&по-русски"
+msgstr ""
+
 #: tform1.menuitem4.caption
 msgid "Öffnen"
 msgstr "Abrir"
@@ -169,3 +173,4 @@ msgstr "Guardar como ..."
 #: tform1.wordwrapitem.caption
 msgid "&Zeilenumbruch"
 msgstr "&Wordwrap"
+

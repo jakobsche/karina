@@ -123,6 +123,10 @@ msgstr ""
 msgid "&Spanisch"
 msgstr ""
 
+#: tform1.menuitem32.caption
+msgid "&по-русски"
+msgstr ""
+
 #: tform1.menuitem4.caption
 msgid "Öffnen"
 msgstr ""
