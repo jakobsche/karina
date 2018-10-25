@@ -34,7 +34,7 @@ $(BinTargetDir)/karina.ico: karina.ico
 
 # target directory for binaries
 $(BinTargetDir): bin/$(Target) 
-	if !(test -e $(BinTargetDir) then mkdir $(BinTargetDir) ; fi
+	if !(test -e $(BinTargetDir)) then mkdir $(BinTargetDir) ; fi
 	
 bin/$(Target): bin
 	if !(test -e bin/$(Target)) then mkdir bin/$(Target) ; fi
