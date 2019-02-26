@@ -1,0 +1,176 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.9\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es\n"
+
+#: taboutbox.caption
+msgid "Über Karina"
+msgstr "Sobre Karina"
+
+#: taboutbox.label1.caption
+msgid ""
+"Anwendung \"Karina\" zum Bearbeiten einfacher Textdateien\n"
+"\n"
+"Version 2.0\n"
+"\n"
+"Karina Winn gewidmet\n"
+"\n"
+"Zur Demonstration einer plattfurmunabhängigen GUI-App-Entwicklung mit \"Lazarzus\"-IDE\n"
+"von Andreas Jakobsche (messages@jakobsche.de, andis63.blogspot.de, www.jakobsche.de), Schopenhauerstraße 35C, 70565 Stuttgart programmiert und als Open Source-Projekt zur Verfügung gestellt.\n"
+"\n"
+"Das Quellprojekt kann unverändert unter \n"
+"Windows SE mit Intel-CPU oder\n"
+"Linux mit ARM- sowie Intel-CPU\n"
+"kompiliert werden. Dazu sind die Packages LCLPatch und streams von demselben Autor erforderlich.\n"
+"\n"
+"Teste weitere Plattformen!\n"
+msgstr ""
+"Aplicación \"Karina\" para editar archivos de texto simples\n"
+"\n"
+"Versión 2.0\n"
+"\n"
+"Dedicado a Karina Winn\n"
+"\n"
+"Para demostrar un desarrollo de la aplicación GUI independiente de la plataforma con IDE \"Lazarzus\"\n"
+"por Andreas Jakobsche (messages@jakobsche.de, andis63.blogspot.de, www.jakobsche.de), Schopenhauerstraße 35C, 70565 Stuttgart programado y proporcionado como un proyecto de código abierto.\n"
+"\n"
+"El proyecto de origen no puede modificarse en\n"
+"Windows SE con CPU Intel o\n"
+"Linux con CPU ARM e Intel\n"
+"ser compilado Esto requiere LCLPatch y transmite paquetes del mismo autor.\n"
+"\n"
+"¡Prueba más plataformas!\n"
+
+#: tform1.caption
+msgid "Karina"
+msgstr "Karina"
+
+#: tform1.langmenu.caption
+msgid "&Sprache"
+msgstr "&Lengua"
+
+#: tform1.menuitem1.caption
+msgid "Datei"
+msgstr "Archivo"
+
+#: tform1.menuitem10.caption
+msgid "Beenden"
+msgstr "Terminar"
+
+#: tform1.menuitem11.caption
+msgid "Wiederholen"
+msgstr "Repitir"
+
+#: tform1.menuitem13.caption
+msgid "Ausschneiden"
+msgstr "Cortar"
+
+#: tform1.menuitem14.caption
+msgid "Kopieren"
+msgstr "Copiar"
+
+#: tform1.menuitem15.caption
+msgid "Einfügen"
+msgstr "Insertar"
+
+#: tform1.menuitem17.caption
+msgid "Suchen"
+msgstr "Buscar"
+
+#: tform1.menuitem18.caption
+msgid "Nächsten suchen"
+msgstr "Buscar siguiente"
+
+#: tform1.menuitem19.caption
+msgid "Hilfe"
+msgstr "Ayuda"
+
+#: tform1.menuitem2.caption
+msgid "Neu"
+msgstr "Nuevo"
+
+#: tform1.menuitem20.caption
+msgid "Inhalte"
+msgstr "Contenido"
+
+#: tform1.menuitem21.caption
+msgid "Einführung"
+msgstr "Introducción"
+
+#: tform1.menuitem23.caption
+msgid "Über"
+msgstr "Sobre"
+
+#: tform1.menuitem24.caption
+msgid "&Ansicht"
+msgstr "Vist&a"
+
+#: tform1.menuitem25.caption
+msgid "&Schrift ..."
+msgstr "Tipo&s"
+
+#: tform1.menuitem27.caption
+msgid "&Deutsch"
+msgstr "&Alemán"
+
+#: tform1.menuitem28.caption
+msgid "&English"
+msgstr "&Inglés"
+
+#: tform1.menuitem29.caption
+msgid "&Konfigurationsdatei"
+msgstr "Archivo de &configuración"
+
+#: tform1.menuitem30.caption
+msgid "&Französisch"
+msgstr "&Francés"
+
+#: tform1.menuitem31.caption
+msgid "&Spanisch"
+msgstr "E&spañol"
+
+#: tform1.menuitem32.caption
+msgid "&по-русски"
+msgstr ""
+
+#: tform1.menuitem4.caption
+msgid "Öffnen"
+msgstr "Abrir"
+
+#: tform1.menuitem5.caption
+msgid "Wieder öffnen"
+msgstr "Abrir de nuevo"
+
+#: tform1.menuitem6.caption
+msgid "Bearbeiten"
+msgstr "Editar"
+
+#: tform1.menuitem7.caption
+msgid "Zurücknehmen"
+msgstr "Retirar"
+
+#: tform1.menuitem8.caption
+msgid "S&chließen"
+msgstr "&Clausurar"
+
+#: tform1.menuitemsave.caption
+msgid "Speichern ..."
+msgstr "Guardar ..."
+
+#: tform1.menuitemsaveas.caption
+msgid "Speichern unter ..."
+msgstr "Guardar como ..."
+
+#: tform1.wordwrapitem.caption
+msgid "&Zeilenumbruch"
+msgstr "&Wordwrap"
+

@@ -1,0 +1,20 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Comment[de]=
+Comment=
+Exec=/usr/local/karina/karina
+GenericName[de]=Textbearbeitung für Karina
+GenericName=Textbearbeitung für Karina
+Icon=/usr/local/karina/karina.ico
+MimeType=
+Name[de]=Karina
+Name=Karina
+Path=/usr/local/karina
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
