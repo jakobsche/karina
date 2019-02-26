@@ -17,7 +17,7 @@
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
-      <MajorVersionNr Value="1"/>
+      <MajorVersionNr Value="3"/>
       <BuildNr Value="3"/>
       <Language Value="0407"/>
       <StringTable ProductVersion="1.0.0.2"/>

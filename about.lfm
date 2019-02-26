@@ -9,7 +9,7 @@ object AboutBox: TAboutBox
   OnCreate = FormCreate
   OnResize = FormResize
   Position = poMainFormCenter
-  LCLVersion = '1.8.2.0'
+  LCLVersion = '1.8.4.0'
   object ScrollBox1: TScrollBox
     Left = 4
     Height = 298
@@ -32,7 +32,7 @@ object AboutBox: TAboutBox
       Top = 0
       Width = 400
       AutoSize = False
-      Caption = 'Anwendung "Karina" zum Bearbeiten einfacher Textdateien'#10#10'Version 2.0'#10#10'Karina Winn gewidmet'#10#10'Zur Demonstration einer plattfurmunabhängigen GUI-App-Entwicklung mit "Lazarzus"-IDE'#10'von Andreas Jakobsche (messages@jakobsche.de, andis63.blogspot.de, www.jakobsche.de), Schopenhauerstraße 35C, 70565 Stuttgart programmiert und als Open Source-Projekt zur Verfügung gestellt.'#10#10'Das Quellprojekt kann unverändert unter '#10'Windows SE mit Intel-CPU oder'#10'Linux mit ARM- sowie Intel-CPU'#10'kompiliert werden. Dazu sind die Packages LCLPatch und streams von demselben Autor erforderlich.'#10#10'Teste weitere Plattformen!'
+      Caption = 'Anwendung "Karina" zum Bearbeiten einfacher Textdateien'#10#10'Version 3.0'#10#10'Karina Winn gewidmet'#10#10'Zur Demonstration einer plattfurmunabhängigen GUI-App-Entwicklung mit "Lazarzus"-IDE'#10'von Andreas Jakobsche (messages@jakobsche.de, andis63.blogspot.de, www.jakobsche.de), Schopenhauerstraße 35C, 70565 Stuttgart programmiert und als Open Source-Projekt zur Verfügung gestellt.'#10#10'Das Quellprojekt kann unverändert unter '#10'Windows SE mit Intel-CPU oder'#10'Linux mit ARM- sowie Intel-CPU'#10'kompiliert werden. Dazu sind die Packages LCLPatch und streams von demselben Autor erforderlich.'#10#10'Teste weitere Plattformen!'
       ParentColor = False
       WordWrap = True
     end
