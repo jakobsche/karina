@@ -3,7 +3,7 @@ object Form1: TForm1
   Height = 370
   Top = 205
   Width = 491
-  ActiveControl = Memo
+  ActiveControl = TextEdit
   Caption = 'Karina'
   ClientHeight = 344
   ClientWidth = 491
@@ -22,7 +22,7 @@ object Form1: TForm1
     Width = 491
     Panels = <>
   end
-  object Memo: TMemo
+  object TextEdit: TMemo
     Left = 0
     Height = 324
     Top = 0
@@ -30,7 +30,7 @@ object Form1: TForm1
     Align = alClient
     Font.Height = -13
     Font.Name = 'Nimbus Mono L'
-    OnChange = MemoChange
+    OnChange = TextEditChange
     ParentFont = False
     ScrollBars = ssAutoBoth
     TabOrder = 1

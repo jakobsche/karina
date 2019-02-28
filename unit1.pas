@@ -20,8 +20,8 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, Menus,
-  ComCtrls, StdCtrls{, PathView};
+  Classes, SysUtils, FileUtil, SynEdit, Forms, Controls, Graphics, Dialogs,
+  Menus, ComCtrls, StdCtrls{, PathView};
 
 type
 
@@ -32,7 +32,7 @@ type
     FontDialog: TFontDialog;
     Flags: TImageList;
     MainMenu: TMainMenu;
-    Memo: TMemo;
+    TextEdit: TMemo;
     MenuItem1: TMenuItem;
     MenuItem10: TMenuItem;
     MenuItem11: TMenuItem;
@@ -76,7 +76,7 @@ type
     procedure FormActivate(Sender: TObject);
     procedure FormCloseQuery(Sender: TObject; var CanClose: boolean);
     procedure FormCreate(Sender: TObject);
-    procedure MemoChange(Sender: TObject);
+    procedure TextEditChange(Sender: TObject);
     procedure MenuItem10Click(Sender: TObject);
     procedure MenuItem17Click(Sender: TObject);
     procedure MenuItem20Click(Sender: TObject);
@@ -128,7 +128,7 @@ begin
     end;
   if OpenDialog.Execute then begin
     FileName := OpenDialog.FileName;
-    Memo.Lines.LoadFromFile(FileName);
+    TextEdit.Lines.LoadFromFile(FileName);
     Caption := Format('%s - Karina', [FileName]);
     HasChanged := False
   end;
@@ -148,12 +148,12 @@ begin
       mrNo:;
       else Exit;
     end;
-  Memo.Lines.Clear;
+  TextEdit.Lines.Clear;
   FileName := '';
   Caption := 'Karina';
 end;
 
-procedure TForm1.MemoChange(Sender: TObject);
+procedure TForm1.TextEditChange(Sender: TObject);
 begin
   HasChanged := True
 end;
@@ -182,25 +182,25 @@ var
   P: Integer;
 begin
   if Start = 0 then begin
-    P := Pos(FindDialog.FindText, Memo.Text) - 1;
+    P := Pos(FindDialog.FindText, TextEdit.Text) - 1;
     if P = -1 then begin
       ShowMessage('Kein Fund');
     end
     else begin
-      Memo.SelStart := P;
-      Memo.SelLength := Length(FindDialog.FindText);
+      TextEdit.SelStart := P;
+      TextEdit.SelLength := Length(FindDialog.FindText);
       Start := P + Length(FindDialog.FindText) + 1;
     end;
   end
   else begin
-    P := Start + Pos(FindDialog.FindText, Copy(Memo.Text, Start + 1, Length(Memo.Text))) - 2;
+    P := Start + Pos(FindDialog.FindText, Copy(TextEdit.Text, Start + 1, Length(TextEdit.Text))) - 2;
     if P <= Start then begin
       ShowMessage('Kein weiterer Fund');
       Start := 0
     end
     else begin
-      Memo.SelStart := P;
-      Memo.SelLength := Length(FindDialog.FindText);
+      TextEdit.SelStart := P;
+      TextEdit.SelLength := Length(FindDialog.FindText);
       Start := Start + P + Length(FindDialog.FindText);
     end;
   end;
@@ -212,7 +212,7 @@ var
 begin
   FormAdjust(Self);
   LoadFile;
-  WordWrapItem.Checked := Memo.WordWrap;
+  WordWrapItem.Checked := TextEdit.WordWrap;
   with KarinaConfig do begin
     if (Language = '') or (Language = 'de') then LangMenu.ImageIndex:=0
     else if Language = 'en' then LangMenu.ImageIndex := 1
@@ -254,7 +254,7 @@ end;
 
 procedure TForm1.MenuItem25Click(Sender: TObject);
 begin
-  if FontDialog.Execute then Memo.Font := FontDialog.Font;
+  if FontDialog.Execute then TextEdit.Font := FontDialog.Font;
 end;
 
 procedure TForm1.MenuItem27Click(Sender: TObject);
@@ -277,7 +277,7 @@ begin
       else Exit;
     end;
   FileName := KarinaConfig.ConfigFileName;
-  Memo.Lines.LoadFromFile(FileName);
+  TextEdit.Lines.LoadFromFile(FileName);
   Caption := Format('%s - Karina', [FileName]);
   HasChanged := False
 end;
@@ -299,14 +299,14 @@ end;
 
 procedure TForm1.WordWrapItemClick(Sender: TObject);
 begin
-  Memo.WordWrap := not Memo.WordWrap;
-  (Sender as TMenuItem).Checked := Memo.WordWrap;
+  TextEdit.WordWrap := not TextEdit.WordWrap;
+  (Sender as TMenuItem).Checked := TextEdit.WordWrap;
 end;
 
 procedure TForm1.MenuItemSaveClick(Sender: TObject);
 begin
   if FileName <> '' then begin
-    Memo.Lines.SaveToFile(FileName);
+    TextEdit.Lines.SaveToFile(FileName);
     HasChanged := False
   end
   else MenuItemSaveAs.Click
@@ -316,7 +316,7 @@ procedure TForm1.MenuItemSaveAsClick(Sender: TObject);
 begin
   if SaveDialog.Execute then begin
     FileName := SaveDialog.FileName;
-    Memo.Lines.SaveToFile(FileName);
+    TextEdit.Lines.SaveToFile(FileName);
     HasChanged := False;
     Caption := Format('%s - Karina', [FileName])
   end;
@@ -345,7 +345,7 @@ begin
         else Break {Dateiname als Parameter an Position i vermutet}
       end;
     if Application.Params[i] <> '' then begin
-      Memo.Lines.LoadFromFile(Application.Params[i]);
+      TextEdit.Lines.LoadFromFile(Application.Params[i]);
       Caption := Format('%s - Karina', [Application.Params[i]]);
       FileName := Application.Params[i]
     end
