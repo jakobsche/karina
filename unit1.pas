@@ -32,7 +32,6 @@ type
     FontDialog: TFontDialog;
     Flags: TImageList;
     MainMenu: TMainMenu;
-    TextEdit: TMemo;
     MenuItem1: TMenuItem;
     MenuItem10: TMenuItem;
     MenuItem11: TMenuItem;
@@ -59,6 +58,7 @@ type
     MenuItem30: TMenuItem;
     MenuItem31: TMenuItem;
     MenuItem32: TMenuItem;
+    TextEdit: TSynEdit;
     WordWrapItem: TMenuItem;
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
@@ -188,7 +188,7 @@ begin
     end
     else begin
       TextEdit.SelStart := P;
-      TextEdit.SelLength := Length(FindDialog.FindText);
+      {TextEdit.SelLength := Length(FindDialog.FindText);}
       Start := P + Length(FindDialog.FindText) + 1;
     end;
   end
@@ -200,7 +200,7 @@ begin
     end
     else begin
       TextEdit.SelStart := P;
-      TextEdit.SelLength := Length(FindDialog.FindText);
+      {TextEdit.SelLength := Length(FindDialog.FindText);}
       Start := Start + P + Length(FindDialog.FindText);
     end;
   end;
@@ -212,7 +212,7 @@ var
 begin
   FormAdjust(Self);
   LoadFile;
-  WordWrapItem.Checked := TextEdit.WordWrap;
+  WordWrapItem.Checked := False {TextEdit.WordWrap};
   with KarinaConfig do begin
     if (Language = '') or (Language = 'de') then LangMenu.ImageIndex:=0
     else if Language = 'en' then LangMenu.ImageIndex := 1
@@ -299,8 +299,8 @@ end;
 
 procedure TForm1.WordWrapItemClick(Sender: TObject);
 begin
-  TextEdit.WordWrap := not TextEdit.WordWrap;
-  (Sender as TMenuItem).Checked := TextEdit.WordWrap;
+  {TextEdit.WordWrap := not TextEdit.WordWrap;
+  (Sender as TMenuItem).Checked := TextEdit.WordWrap;}
 end;
 
 procedure TForm1.MenuItemSaveClick(Sender: TObject);
