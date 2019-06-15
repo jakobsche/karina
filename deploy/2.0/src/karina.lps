@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="4">
+      <Unit0>
+        <Filename Value="karina.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <IsVisibleTab Value="True"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="about.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AboutBox"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="About"/>
+        <UsageCount Value="20"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="config.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Config"/>
+        <UsageCount Value="20"/>
+      </Unit3>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+  </ProjectSession>
+</CONFIG>
