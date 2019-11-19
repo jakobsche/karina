@@ -249,7 +249,8 @@ end;
 
 procedure TForm1.MenuItem23Click(Sender: TObject);
 begin
-  AboutBox.Show
+  AboutBox.Show;
+  AboutBox.BringToFront
 end;
 
 procedure TForm1.MenuItem25Click(Sender: TObject);
@@ -332,10 +333,12 @@ procedure TForm1.LoadFile;
 var
   i: Integer;
 begin
+  ShowMessage(Format('%d Parameter', [Application.ParamCount]));
   if Application.ParamCount > 0 then begin
     i := 1;
     with Application do
       while (i <= ParamCount) do begin
+        ShowMessage(Format('1. Parameter: %s', [Application.Params[1]]));
       { Optionen mit je 1 Parameter überspringen }
         if (Params[i] = '-l') or (Params[i] = '--lang') then begin
           Inc(i, 2) {wird von Unit LCLTranslator ausgewertet}

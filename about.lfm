@@ -1,18 +1,18 @@
 object AboutBox: TAboutBox
-  Left = 716
-  Height = 306
-  Top = 220
+  Left = 602
+  Height = 316
+  Top = 88
   Width = 442
   Caption = 'Über Karina'
-  ClientHeight = 306
+  ClientHeight = 316
   ClientWidth = 442
   OnCreate = FormCreate
   OnResize = FormResize
   Position = poMainFormCenter
-  LCLVersion = '1.8.4.0'
+  LCLVersion = '2.0.2.0'
   object ScrollBox1: TScrollBox
     Left = 4
-    Height = 298
+    Height = 308
     Top = 4
     Width = 434
     HorzScrollBar.Page = 541
@@ -22,8 +22,8 @@ object AboutBox: TAboutBox
     Align = alClient
     AutoScroll = False
     BorderSpacing.Around = 4
-    ClientHeight = 296
-    ClientWidth = 419
+    ClientHeight = 306
+    ClientWidth = 432
     TabOrder = 0
     OnResize = ScrollBox1Resize
     object Label1: TLabel
