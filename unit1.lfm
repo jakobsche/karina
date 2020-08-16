@@ -14,7 +14,7 @@ object Form1: TForm1
   OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
   Position = poDefault
-  LCLVersion = '2.0.2.0'
+  LCLVersion = '2.0.10.0'
   object StatusBar1: TStatusBar
     Left = 0
     Height = 18
@@ -39,8 +39,8 @@ object Form1: TForm1
   end
   object MainMenu: TMainMenu
     Images = Flags
-    left = 72
-    top = 19
+    Left = 72
+    Top = 19
     object MenuItem1: TMenuItem
       Caption = 'Datei'
       object MenuItem2: TMenuItem
@@ -176,22 +176,22 @@ object Form1: TForm1
   end
   object OpenDialog: TOpenDialog
     Options = [ofReadOnly, ofShowHelp, ofExtensionDifferent, ofPathMustExist, ofFileMustExist, ofEnableSizing, ofForceShowHidden, ofViewDetail, ofAutoPreview]
-    left = 169
-    top = 19
+    Left = 169
+    Top = 19
   end
   object SaveDialog: TSaveDialog
-    left = 256
-    top = 19
+    Left = 256
+    Top = 19
   end
   object FontDialog: TFontDialog
     MinFontSize = 0
     MaxFontSize = 0
-    left = 169
-    top = 80
+    Left = 169
+    Top = 80
   end
   object Flags: TImageList
-    left = 383
-    top = 69
+    Left = 383
+    Top = 69
     Bitmap = {
       4C69050000001000000010000000434C4CFF3A494CFF38474CFF3C4A4CFF3A46
       46FF364140FF313F3FFF2F3F3FFF2F3F3FFF2F3F3FFF2F3F3FFF2F3F3FFF2F3F
@@ -358,7 +358,7 @@ object Form1: TForm1
   end
   object FindDialog: TFindDialog
     OnFind = FindDialogFind
-    left = 124
-    top = 143
+    Left = 124
+    Top = 143
   end
 end

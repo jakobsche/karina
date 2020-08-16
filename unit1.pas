@@ -333,7 +333,7 @@ procedure TForm1.LoadFile;
 var
   i: Integer;
 begin
-  ShowMessage(Format('%d Parameter', [Application.ParamCount]));
+  ShowMessage(Format('%d Parameter', [ParamCount]));
   if Application.ParamCount > 0 then begin
     i := 1;
     with Application do
